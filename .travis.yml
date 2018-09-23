@@ -1,0 +1,11 @@
+language: go
+go:
+  - 1.10
+  - master
+
+os:
+  - linux
+  - osx
+
+dist: trusty
+sudo: false
