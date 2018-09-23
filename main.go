@@ -3,6 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
+
+	"github.com/fatih/color"
 )
 
 var (
@@ -17,11 +19,12 @@ func init() {
 
 func main() {
 	flag.Parse()
-	fmt.Println()
+	color.Cyan("Prints text in cyan.")
 }
 
 // match like // FIXME ....
 //
 func match(pattern, line string) bool {
+	fmt.Println(pattern, line)
 	return true
 }
